@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: morp-config
+  namespace: morp
+data:
+  DISCORD_GUILD_ID: "755125785425346652"
+  KAMINO_URL: "http://goclone.sdc.cpp"
+  KAMINO_LOGIN_ENDPOINT: "/api/v1/login"
+  KAMINO_GET_PODS_ENDPOINT: "/api/v1/admin/view/pods"
+  KAMINO_DELETE_ENDPOINT: "/api/v1/admin/pod/delete"
+  KAMINO_BULK_DELETE_ENDPOINT: "/api/v1/admin/pod/delete/bulk"
+  KAMINO_REFRESH_TEMPLATES_ENDPOINT: "/api/v1/admin/templates/refresh"

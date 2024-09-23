@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: morp-v1
+  namespace: morp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: morp
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: morp
+        version: v1
+    spec:
+      containers:
+        - name: morp
+          image: cppcyber/morp:latest
+          imagePullPolicy: Always
+          env:
+            - name: KAMINO_USER
+              valueFrom:
+                secretKeyRef:
+                  name: morp-secret
+                  key: username
+            - name: KAMINO_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: morp-secret
+                  key: password
+            - name: DISCORD_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: morp-secret
+                  key: discord
+          envFrom:
+            - configMapRef:
+                name: morp-config
