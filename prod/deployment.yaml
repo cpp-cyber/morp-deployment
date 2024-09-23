@@ -5,8 +5,15 @@ metadata:
   namespace: morp
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: morp
+      version: v1
   template:
     metadata:
+      labels:
+        app: morp
+        version: v1
     spec:
       containers:
         - name: morp
