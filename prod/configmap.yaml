@@ -11,3 +11,4 @@ data:
   KAMINO_DELETE_ENDPOINT: "/api/v1/admin/pod/delete"
   KAMINO_BULK_DELETE_ENDPOINT: "/api/v1/admin/pod/delete/bulk"
   KAMINO_REFRESH_TEMPLATES_ENDPOINT: "/api/v1/admin/templates/refresh"
+  DB_PATH: "/data/morp.db"

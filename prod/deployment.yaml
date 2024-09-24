@@ -41,7 +41,7 @@ spec:
                   key: discord
           volumeMounts:
             - name: morp-volume
-              mountPath: /root/
+              mountPath: /data
           envFrom:
             - configMapRef:
                 name: morp-config
