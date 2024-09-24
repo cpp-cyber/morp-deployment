@@ -35,10 +35,10 @@ spec:
                 secretKeyRef:
                   name: morp-secret
                   key: discord
-        volumes:
-        - name: morp-volume
-          persistentVolumeClaim:
-            claimName: morp-pvc
+      volumes:
+      - name: morp-volume
+        persistentVolumeClaim:
+          claimName: morp-pvc
           envFrom:
             - configMapRef:
                 name: morp-config
