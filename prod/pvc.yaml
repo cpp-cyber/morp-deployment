@@ -4,6 +4,7 @@ metadata:
   name: morp-pvc
   namespace: morp
 spec:
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
