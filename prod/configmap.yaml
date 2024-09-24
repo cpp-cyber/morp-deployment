@@ -4,7 +4,7 @@ metadata:
   name: morp-config
   namespace: morp
 data:
-  DISCORD_GUILD_ID: "755125785425346652"
+  DISCORD_GUILD_ID: "756013026515222550"
   KAMINO_URL: "http://goclone-svc.goclone.svc.cluster.local:8080"
   KAMINO_LOGIN_ENDPOINT: "/api/v1/login"
   KAMINO_GET_PODS_ENDPOINT: "/api/v1/admin/view/pods"
